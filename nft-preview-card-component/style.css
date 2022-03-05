@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --main-bg: #0D192B;
+    --card-bg: #14253D;
+    --line-bg: #2F415B;
+    --white: #FFFFFF;
+    --text-color: #8BACDA;
+    --span-color: #00FFF7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card__image__overlay {
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--span-color);
+    transition: .3s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card__overlay:hover {
+    opacity: 1;
+}
+
+.card__overlay img {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card__img:hover:after {
+    opacity: 1;
+}
+
+.card__text h1 {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.card__text h1:hover {
+    color: var(--span-color);
+    cursor: pointer;
+}
+
+.card__text p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card__transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.card__left {
+    display: flex;
+    align-items: center;
+}
+
+.card__left span {
+    color: var(--span-color);
+}
+
+.card__left img {
+    margin-right: 5px;
+}
+
+.card__right {
+    display: flex;
+    align-items: center;
+}
+
+.card__right img {
+    margin-right: 5px;
+}
+
+.card__divider {
+    width: 100%;
+    border: 1px solid var(--line-bg);
+}
+
+.card__end {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px 0;
+}
+
+.card__end img {
+    width: 30px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card__end__text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card__end__text p {
+    color: var(--text-color);
+}
+
+.card__end__text span {
+    color: var(--white);
+}
+
+.card__end__text span:hover {
+    color: var(--span-color);
+    cursor: pointer;
+}
