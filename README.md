@@ -7,5 +7,5 @@ Hope i will be consistent in this journey to become developer.
 This code is not 1:1 ratio because i do not have **pro** so i only have images how project should look.
 
 - [x] [QR Code Component](https://nezo96.github.io/qr-code-component/index.html)
-
+- [ ] NFT preview card component - (working on)
 Wish me luck and a lot of ☕.
