@@ -45,6 +45,7 @@
     border-radius: 10px;
 }
 
+/*I have no idea but it work*/
 .card__overlay {
     position: absolute;
     top: 0;
@@ -58,6 +59,7 @@
     opacity: 0;
     cursor: pointer;
 }
+/*I have no idea but it work*/
 
 .card__overlay:hover {
     opacity: 1;
