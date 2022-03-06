@@ -8,5 +8,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [QR Code Component](https://nezo96.github.io/qr-code-component/index.html)
 - [x] [NFT preview card component](https://nezo96.github.io/nft-preview-card-component/index.html)
+- [ ] Stats preview card component - working on
 
 Wish me luck and a lot of ☕.
