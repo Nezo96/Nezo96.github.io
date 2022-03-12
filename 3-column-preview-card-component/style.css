@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: var(--gray);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 500px;
+    width: 307px;
+}
+
+img {
+    width: 64px;
+    height: 40px;
+}
+
+.card__wrapper {
+    padding: 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__body h1 {
+    margin-top: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+.card__body p {
+    margin-top: 25px;
+    width: 212px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.card__footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 146px;
+    height: 48px;
+    border: 1px solid #979797;
+    border-radius: 25px;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--white) !important;
+    border: 2px solid var(--white);
+    border-radius: 25px;
+}
+
+.card-one {
+    background-color: var(--orange);
+    border-radius: 8px 0 0 8px;
+}
+
+.card-one button {
+    color: var(--orange);
+}
+
+.card-two {
+    background-color: var(--cyan);
+}
+
+.card-two button {
+    color: var(--cyan);
+}
+
+.card-tree {
+    background-color: var(--dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.card-tree button {
+    color: var(--dark-cyan);
+}

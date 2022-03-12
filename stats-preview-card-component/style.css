@@ -124,6 +124,7 @@ span {
         order: -1;
         width: 100%;
         border-radius: 10px 10px 0 0;
+        max-height: 350px;
     }
 
     .card__left {
