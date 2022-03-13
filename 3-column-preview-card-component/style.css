@@ -109,3 +109,24 @@ button:hover {
 .card-tree button {
     color: var(--dark-cyan);
 }
+
+@media screen and (max-width: 834px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .card {
+        width: 327px;
+    }
+
+    .card-one {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-tree {
+        border-radius: 0 0 8px 8px;
+    }
+}
