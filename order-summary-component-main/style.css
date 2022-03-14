@@ -161,6 +161,9 @@
 @media screen and (max-width: 576px){
     .main {
         width: 100%;
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .card {
