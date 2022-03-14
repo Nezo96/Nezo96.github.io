@@ -10,6 +10,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 - [x] [NFT preview card component](https://nezo96.github.io/nft-preview-card-component/index.html)
 - [x] [Stats preview card component](https://nezo96.github.io/stats-preview-card-component/index.html) - done, but my brain is hurting me from this
 - [x] [3-column preview card component](https://nezo96.github.io/3-column-preview-card-component/) - done, it was hard to do form me but i did it with figma design
-- [ ] Order summary component - desktop done, mobile 10% done
+- [x] [Order summary component](https://nezo96.github.io/order-summary-component-main/index.html) - done
 
 Wish me luck and a lot of ☕.
