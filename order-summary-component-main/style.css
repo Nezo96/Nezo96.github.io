@@ -92,6 +92,7 @@
 .box__inner h3 {
     font-size: 16px;
     font-weight: 900;
+    margin-bottom: 6px;
 }
 
 .box__inner p {
@@ -200,7 +201,8 @@
     }
 
     .box__inner h3 {
-        font-size: 14px
+        font-size: 14px;
+        margin-bottom: 3px;
     }
 
     .box__inner p {
