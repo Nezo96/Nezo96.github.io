@@ -139,3 +139,64 @@
     font-size: 15px;
     font-weight: 900;
 }
+
+@media screen and (max-width: 576px){
+    .main {
+        width: 100%;
+    }
+
+    .card {
+        width: 327px;
+    }
+
+    .card__head {
+        height: 160px;
+    }
+
+    .card__head img {
+        width: 100%;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    .card__body {
+        padding: 32px 24px;
+    }
+
+    .card__body h1 {
+        font-size: 22px;
+    }
+
+    .card__body p {
+        margin-top: 16px;
+        font-size: 15px;
+    }
+
+    .card__box {
+        margin-top: 24px;
+        padding: 17px 16px;
+    }
+
+    .box__inner h3 {
+        font-size: 14px
+    }
+
+    .box__inner p {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .box-two a {
+        font-size: 13px;
+    }
+
+    .card__footer button {
+        margin-top: 24px;
+        font-size: 15px;
+    }
+
+    .card__footer a {
+        margin-top: 24px;
+        font-size: 15px;
+    }
+}
