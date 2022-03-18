@@ -19,7 +19,6 @@ body {
 .top-img {
     width: 50vw;
     height: 50vh;
-    border: solid 1px black;
     background-image: url(images/bg-pattern-top.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -31,7 +30,6 @@ body {
 .bottom-img {
     width: 50vw;
     height: 50vh;
-    border: solid 1px red;
     background-image: url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: top left;
