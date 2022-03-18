@@ -12,6 +12,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 - [x] [3-column preview card component](https://nezo96.github.io/3-column-preview-card-component/) - done, it was hard to do form me but i did it with figma design - with **pro**
 - [x] [Order summary component](https://nezo96.github.io/order-summary-component-main/index.html) - done - with **pro**
 
-- [x] [Profile Card Component] - working on
+- [x] [Profile Card Component](https://nezo96.github.io/profile-card-component-main/index.html) - done - with **pro**
 
 Wish me luck and a lot of ☕.
