@@ -14,4 +14,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Profile Card Component](https://nezo96.github.io/profile-card-component-main/index.html) - done - with **pro**
 
+- Social Proof Section - desktop done, mobile not. (SASS)
+
 Wish me luck and a lot of ☕.
