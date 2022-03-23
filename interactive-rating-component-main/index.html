@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <section id="main">
+    <div class="container">
+      <div class="star">
+        <img src="images/icon-star.svg" alt="stark-icon">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!</p>
+      <ul class="rating">
+        <li class="rating__list" id="rating1">1</li>
+        <li class="rating__list" id="rating2">2</li>
+        <li class="rating__list" id="rating3">3</li>
+        <li class="rating__list" id="rating4">4</li>
+        <li class="rating__list" id="rating5">5</li>
+      </ul>
+      <!-- <div class="rating">
+        <label class="label" for="rating_field1">
+          <input class="radio" type="radio" id="rating_field1" name="rating1">1
+        </label>
+        <label class="label" for="rating_field2">
+          <input class="radio" type="radio" id="rating_field2" name="rating2">2
+        </label>
+        <label class="label" for="rating_field3">
+          <input class="radio active" type="radio" id="rating_field3" name="rating3">3
+        </label>
+        <label class="label active" for="rating_field4">
+          <input class="radio" type="radio" id="rating_field4" name="rating4">4
+        </label>
+        <label class="label" for="rating_field5">
+          <input class="radio" type="radio" id="rating_field5" name="rating5">5
+        </label>
+      </div> -->
+      <button type="button" id="submit">submit</button>
+    </div>
+  </section>
+
+  <section id="thank_you">
+    <div class="container">
+      <img src="images/illustration-thank-you.svg" alt="thank-you">
+      <!-- need to done js rating counting -->
+      <span>You selected 4 out of 5</span>
+      <div class="text">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+          touch!</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
