@@ -28,6 +28,9 @@ body {
     justify-content: center;
 }
 
+/*
+    Main Section
+*/
 #main {
     display: flex;
     justify-content: center;
@@ -148,6 +151,61 @@ body {
             &:hover {
                 background-color: $white;
                 color: $orange;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*
+    Hidden Section
+*/
+#thank_you {
+    display: none;
+
+    .container {
+        max-width: 412px;
+        background-color: #232A34;
+        border-radius: 15px;
+        padding: 45px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 162px;
+            height: 108px;
+        }
+
+        span {
+            margin-top: 32px;
+            border-radius: 22.5px;
+            background-color: $dark-blue;
+            color: $orange;
+            font-size: 15px;
+            line-height: 24px;
+            padding: 4px 20px;
+        }
+
+        .text {
+            width: 100%;
+
+            h1 {
+                margin-top: 32px;
+                text-align: center;
+                color: $white;
+                font-size: 28px;
+                font-weight: $bold;
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 15px;
+                font-weight: $regular;
+                line-height: 24px;
+                text-align: center;
+                color: $light-gray;
             }
         }
     }
@@ -167,11 +225,6 @@ body {
                 .star {
                     width: 40px;
                     height: 40px;
-                    background-color: $dark-blue;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     
                     img {
                         object-fit: contain;
@@ -180,76 +233,21 @@ body {
 
                 h1 {
                     margin-top: 16px;
-                    width: 100%;
                     font-size: 24px;
-                    font-weight: $bold;
-                    color: $white;
                     line-height: 22px;
                 }
 
                 p {
-                    width: 100%;
                     margin-top: 10px;
                     font-size: 14px;
-                    font-weight: $regular;
-                    color: $light-gray;
                     line-height: 22px;
                 }
 
                 .rating {
-                    width: 100%;
-                    margin-top: 24px;
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-between;
 
                     &__list {
                         width: 42px;
                         height: 42px;
-                        background-color: $dark-blue;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: $medium-gray;
-
-                        &:active {
-                            background-color: $medium-gray;
-                            color: $white;
-                        }
-
-                        &:hover {
-                            background-color: $orange;
-                            color: $white;
-                            cursor: pointer;
-                        }
-                    }
-
-                    input {
-                        display: none;
-                    }
-
-                    label {
-                        // border: 1px solid yellow;
-                        width: 42px;
-                        height: 42px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 50%;
-                        background-color: $dark-blue;
-                        color: $medium-gray;
-                        transition: 0.5s all;
-
-                        &:hover {
-                            background-color: $orange;
-                            color: $white;
-                        }                    
-                    }
-
-                    .active {
-                        background-color: $medium-gray;
-                        color: $white;
                     }
                 }
 
@@ -259,28 +257,15 @@ body {
                     height: 45px;
                     font-size: 14px;
                     letter-spacing: 1.87px;
-
-                    &:hover {
-                        background-color: $white;
-                        color: $orange;
-                    }
                 }
             }
         }
 
         #thank_you {
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: height 0ms 0ms, opacity 1s 0ms;
+
             .container {
-                background-color: #232A34;
                 border-radius: 15px;
                 padding: 0 24px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
 
                 img {
                     width: 144px;
@@ -291,31 +276,22 @@ body {
                 span {
                     margin-top: 24px;
                     padding: 5px 12px;
-                    border-radius: 22.5px;
-                    background-color: $dark-blue;
-                    color: $orange;
                     font-size: 14px;
                     line-height: 22px;
                 }
 
                 .text {
-                    width: 100%;
+
                     h1 {
                         margin-top: 24px;
-                        text-align: center;
-                        color: $white;
                         font-size: 24px;
-                        font-weight: $bold;
                     }
 
                     p {
                         margin-top: 10px;
                         font-size: 14px;
-                        font-weight: $regular;
                         line-height: 22px;
-                        text-align: center;
                         margin-bottom: 37px;
-                        color: $light-gray;
                     }
                 }
             }
