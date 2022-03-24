@@ -16,5 +16,5 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Social Proof Section](https://nezo96.github.io/social-proof-section/) - done (SASS) - with **figma sketch**
 
-- [ ] Interactive Rating Component - done mobile resolution
+- [x] [Interactive Rating Component](https://nezo96.github.io/interactive-rating-component-main/) - done mobile resolution
 Wish me luck and a lot of ☕.
