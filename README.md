@@ -16,6 +16,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Social Proof Section](https://nezo96.github.io/social-proof-section/) - done (SASS) - with **figma sketch**
 
-:ballot_box_with_check:Male (https://nezo96.github.io/interactive-rating-component-main/) - done (SASS) - with **figma sketch**
+:white_check_mark: (https://nezo96.github.io/interactive-rating-component-main/) - done (SASS) - with **figma sketch**
 
 Wish me luck and a lot of ☕.
