@@ -19,6 +19,10 @@ body .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -28,44 +32,43 @@ body .wrapper {
 }
 
 body .main {
-  max-width: 635px;
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 81, 171, 0.14);
-          box-shadow: 0 15px 30px 0 rgba(0, 81, 171, 0.14);
+  max-width: 39.688rem;
+  -webkit-box-shadow: 0 0.938rem 1.875 0 rgba(0, 81, 171, 0.14);
+          box-shadow: 0 0.938rem 1.875 0 rgba(0, 81, 171, 0.14);
 }
 
 body .main .upper {
   background-color: white;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: left;
-  border-radius: 8px 8px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 body .main .upper h1 {
   color: #2ab2af;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.3px;
-  margin-bottom: 24px;
+  letter-spacing: -0.019rem;
+  margin-bottom: 1.5rem;
 }
 
 body .main .upper h2 {
   color: #c0df34;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -0.22px;
-  margin-bottom: 11px;
+  letter-spacing: -0.014rem;
+  margin-bottom: 0.688rem;
 }
 
 body .main .upper p {
   color: #98a6bd;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  letter-spacing: -0.2px;
-  line-height: 26px;
+  letter-spacing: -0.013rem;
+  line-height: 1.625rem;
 }
 
 body .main .lower {
-  background-color: #2ab2af;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,20 +76,22 @@ body .main .lower {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  background-color: #2ab2af;
 }
 
 body .main .lower .left {
-  padding: 40px;
+  padding: 2.5rem;
   width: 50%;
+  height: 100%;
   text-align: left;
 }
 
 body .main .lower .left h3 {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: -0.22px;
-  margin-bottom: 18px;
+  line-height: -0.014rem;
+  margin-bottom: 1.125rem;
 }
 
 body .main .lower .left .price {
@@ -97,50 +102,50 @@ body .main .lower .left .price {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 body .main .lower .left .price h1 {
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: -0.4px;
-  margin-right: 11px;
+  line-height: -0.025rem;
+  margin-right: 0.688rem;
 }
 
 body .main .lower .left .price span {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.2px;
+  line-height: 1.625rem;
+  letter-spacing: -0.013rem;
   opacity: 50%;
 }
 
 body .main .lower .left p {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.2px;
-  margin-bottom: 26px;
+  line-height: 1.625rem;
+  letter-spacing: -0.013rem;
+  margin-bottom: 1.625rem;
 }
 
 body .main .lower .left button {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.013rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   background-color: #c0df34;
-  padding: 15px 89px;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 0.938rem 5.563rem;
+  -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
 }
 
 body .main .lower .right {
-  padding: 40px;
+  padding: 2.5rem;
   width: 50%;
   height: 100%;
   text-align: left;
@@ -149,18 +154,18 @@ body .main .lower .right {
 
 body .main .lower .right h3 {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -0.22px;
-  margin-bottom: 18px;
+  letter-spacing: -0.014rem;
+  margin-bottom: 1.125rem;
 }
 
-body .main .lower .right p {
+body .main .lower .right .text-wrapper p {
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  letter-spacing: -0.17px;
-  line-height: 20px;
+  letter-spacing: -0.011rem;
+  line-height: 1.25rem;
   opacity: 0.75;
 }
 
@@ -169,38 +174,38 @@ body .main .lower .right p {
     width: 100vw;
     height: 100vh;
   }
-  body .main {
+  body .wrapper .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 311px;
+    max-width: 19.438rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .main .upper {
+  body .wrapper .main .upper {
     width: 100%;
-    padding-top: 28px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 32px;
+    padding-top: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
   }
-  body .main .upper h1 {
-    font-size: 20px;
-    letter-spacing: -0.25px;
+  body .wrapper .main .upper h1 {
+    font-size: 1.25rem;
+    letter-spacing: -0.016rem;
   }
-  body .main .upper h2 {
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.19px;
-    margin-bottom: 16px;
+  body .wrapper .main .upper h2 {
+    font-size: 0.938rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.012rem;
+    margin-bottom: 1rem;
   }
-  body .main .upper p {
-    font-size: 14px;
-    letter-spacing: -0.17px;
+  body .wrapper .main .upper p {
+    font-size: 0.875rem;
+    letter-spacing: -0.011rem;
   }
-  body .main .lower {
+  body .wrapper .main .lower {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,16 +215,20 @@ body .main .lower .right p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .main .lower .left {
+  body .wrapper .main .lower .left {
     width: 100%;
-    padding: 24px;
+    padding: 1.5rem;
   }
-  body .main .lower .left button {
+  body .wrapper .main .lower .left button {
     width: 100%;
   }
-  body .main .lower .right {
+  body .wrapper .main .lower .right {
     width: 100%;
-    padding: 24px;
+    padding: 1.5;
+  }
+  body .wrapper footer {
+    max-width: 19.438rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

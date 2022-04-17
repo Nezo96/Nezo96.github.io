@@ -23,112 +23,114 @@ body {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .main {
-        max-width: 635px;
-        box-shadow: 0 15px 30px 0 rgba($color: #0051AB, $alpha: 0.14);
+        max-width: 39.688rem;
+        box-shadow: 0 0.938rem 1.875 0 rgba($color: #0051AB, $alpha: 0.14);
 
         .upper {
             background-color: white;
-            padding: 40px;
+            padding: 2.5rem;
             text-align: left;
-            border-radius: 8px 8px 0 0;
+            border-radius: 0.5rem 0.5rem 0 0;
 
             h1 {
                 color: $cyan;
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-weight: 700;
-                letter-spacing: -0.3px;
-                margin-bottom: 24px;
+                letter-spacing: -0.019rem;
+                margin-bottom: 1.5rem;
             }
 
             h2 {
                 color: $bright-yellow;
-                font-size: 18px;
+                font-size: 1.125rem;
                 font-weight: 700;
-                letter-spacing: -0.22px;
-                margin-bottom: 11px;
+                letter-spacing: -0.014rem;
+                margin-bottom: 0.688rem;
             }
 
             p {
                 color: $grayish-blue;
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: $regular;
-                letter-spacing: -0.2px;
-                line-height: 26px;
+                letter-spacing: -0.013rem;
+                line-height: 1.625rem;
             }
         }
 
         .lower {
-            background-color: $cyan;
             display: flex;
             align-items: center;
             width: 100%;
+            background-color: $cyan;
 
             .left {
-                padding: 40px;
+                padding: 2.5rem;
                 width: 50%;
+                height: 100%;
                 text-align: left;
 
                 h3 {
                     color: white;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: $bold;
-                    line-height: -0.22px;
-                    margin-bottom: 18px;
+                    line-height: -0.014rem;
+                    margin-bottom: 1.125rem;
                 }
 
                 .price {
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 4px;
+                    margin-bottom: 0.25rem;
 
                     h1 {
                         color: white;
-                        font-size: 32px;
+                        font-size: 2rem;
                         font-weight: $bold;
-                        line-height: -0.4px;
-                        margin-right: 11px;
+                        line-height: -0.025rem;
+                        margin-right: 0.688rem;
                     }
 
                     span {
                         color: white;
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-weight: $regular;
-                        line-height: 26px;
-                        letter-spacing: -0.2px;
+                        line-height: 1.625rem;
+                        letter-spacing: -0.013rem;
                         opacity: 50%;
                     }
                 }
 
                 p {
                     color: white;
-                    font-size: 16px;
+                    font-size: 1rem;
                     font-weight: $regular;
-                    line-height: 26px;
-                    letter-spacing: -0.2px;
-                    margin-bottom: 26px;
+                    line-height: 1.625rem;
+                    letter-spacing: -0.013rem;
+                    margin-bottom: 1.625rem;
                 }
 
                 button {
                     color: white;
-                    font-size: 16px;
+                    font-size: 1rem;
                     font-weight: $bold;
-                    letter-spacing: -0.2px;
+                    letter-spacing: -0.013rem;
                     border: none;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     background-color: $bright-yellow;
-                    padding: 15px 89px;
-                    box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+                    padding: 0.938rem 5.563rem;
+                    box-shadow: 0 0.25rem 0.25rem 0 rgba($color: #000000, $alpha: 0.25);
                 }
             }
 
             .right {
-                padding: 40px;
+                padding: 2.5rem;
                 width: 50%;
                 height: 100%;
                 text-align: left;
@@ -136,19 +138,21 @@ body {
 
                 h3 {
                     color: white;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: $bold;
-                    letter-spacing: -0.22px;
-                    margin-bottom: 18px;
+                    letter-spacing: -0.014rem;
+                    margin-bottom: 1.125rem;
                 }
 
-                p {
-                    color: white;
-                    font-size: 14px;
-                    font-weight: $regular;
-                    letter-spacing: -0.17px;
-                    line-height: 20px;
-                    opacity: 0.75;
+                .text-wrapper {
+                    p {
+                        color: white;
+                        font-size: 0.875rem;
+                        font-weight: $regular;
+                        letter-spacing: -0.011rem;
+                        line-height: 1.25rem;
+                        opacity: 0.75;
+                    }
                 }
             }
         }
@@ -160,54 +164,62 @@ body {
         width: 100vw;
         height: 100vh;
 
-        .main {
-            display: flex;
-            max-width: 311px;
-            flex-direction: column;
+        .wrapper {
 
-            .upper {
-                width: 100%;
-                padding-top: 28px;
-                padding-left: 24px;
-                padding-right: 24px;
-                padding-bottom: 32px;
-
-                h1 {
-                    font-size: 20px;
-                    letter-spacing: -0.25px;
-                }
-
-                h2 {
-                    font-size: 15px;
-                    line-height: 20px;
-                    letter-spacing: -0.19px;
-                    margin-bottom: 16px;
-                }
-
-                p {
-                    font-size: 14px;
-                    letter-spacing: -0.17px;
-                }
-            }
-
-            .lower {
+            .main {
                 display: flex;
-                width: 100%;
+                max-width: 19.438rem;
                 flex-direction: column;
 
-                .left {
+                .upper {
                     width: 100%;
-                    padding: 24px;
+                    padding-top: 1.75rem;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    padding-bottom: 2rem;
 
-                    button {
-                        width: 100%;
+                    h1 {
+                        font-size: 1.25rem;
+                        letter-spacing: -0.016rem;
+                    }
+
+                    h2 {
+                        font-size: 0.938rem;
+                        line-height: 1.25rem;
+                        letter-spacing: -0.012rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.875rem;
+                        letter-spacing: -0.011rem;
                     }
                 }
 
-                .right {
+                .lower {
+                    display: flex;
                     width: 100%;
-                    padding: 24px;
+                    flex-direction: column;
+
+                    .left {
+                        width: 100%;
+                        padding: 1.5rem;
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+
+                    .right {
+                        width: 100%;
+                        padding: 1.5;
+                    }
                 }
+            }
+
+            footer {
+                max-width: 19.438rem;
+                text-align: center;
             }
         }
     }
