@@ -18,6 +18,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Interactive Rating Component](https://nezo96.github.io/interactive-rating-component-main/) - done (SASS) - with **figma sketch**
 
-- single-price-grid-component-master - working on
+- [x] [Single Price Grid Component](https://nezo96.github.io/single-price-grid-component-master/index.html) - done (SASS) - with **figma sketch**
 
 Wish me luck and a lot of ☕.
