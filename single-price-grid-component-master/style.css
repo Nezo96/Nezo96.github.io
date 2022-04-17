@@ -31,20 +31,20 @@ body .wrapper {
           align-items: center;
 }
 
-body .main {
+body .wrapper .main {
   max-width: 39.688rem;
   -webkit-box-shadow: 0 0.938rem 1.875 0 rgba(0, 81, 171, 0.14);
           box-shadow: 0 0.938rem 1.875 0 rgba(0, 81, 171, 0.14);
 }
 
-body .main .upper {
+body .wrapper .main .upper {
   background-color: white;
   padding: 2.5rem;
   text-align: left;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-body .main .upper h1 {
+body .wrapper .main .upper h1 {
   color: #2ab2af;
   font-size: 1.5rem;
   font-weight: 700;
@@ -52,7 +52,7 @@ body .main .upper h1 {
   margin-bottom: 1.5rem;
 }
 
-body .main .upper h2 {
+body .wrapper .main .upper h2 {
   color: #c0df34;
   font-size: 1.125rem;
   font-weight: 700;
@@ -60,7 +60,7 @@ body .main .upper h2 {
   margin-bottom: 0.688rem;
 }
 
-body .main .upper p {
+body .wrapper .main .upper p {
   color: #98a6bd;
   font-size: 1rem;
   font-weight: 400;
@@ -68,7 +68,7 @@ body .main .upper p {
   line-height: 1.625rem;
 }
 
-body .main .lower {
+body .wrapper .main .lower {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,16 +77,17 @@ body .main .lower {
           align-items: center;
   width: 100%;
   background-color: #2ab2af;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
-body .main .lower .left {
+body .wrapper .main .lower .left {
   padding: 2.5rem;
   width: 50%;
   height: 100%;
   text-align: left;
 }
 
-body .main .lower .left h3 {
+body .wrapper .main .lower .left h3 {
   color: white;
   font-size: 1.125rem;
   font-weight: 700;
@@ -94,7 +95,7 @@ body .main .lower .left h3 {
   margin-bottom: 1.125rem;
 }
 
-body .main .lower .left .price {
+body .wrapper .main .lower .left .price {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +106,7 @@ body .main .lower .left .price {
   margin-bottom: 0.25rem;
 }
 
-body .main .lower .left .price h1 {
+body .wrapper .main .lower .left .price h1 {
   color: white;
   font-size: 2rem;
   font-weight: 700;
@@ -113,7 +114,7 @@ body .main .lower .left .price h1 {
   margin-right: 0.688rem;
 }
 
-body .main .lower .left .price span {
+body .wrapper .main .lower .left .price span {
   color: white;
   font-size: 1rem;
   font-weight: 400;
@@ -122,7 +123,7 @@ body .main .lower .left .price span {
   opacity: 50%;
 }
 
-body .main .lower .left p {
+body .wrapper .main .lower .left p {
   color: white;
   font-size: 1rem;
   font-weight: 400;
@@ -131,7 +132,7 @@ body .main .lower .left p {
   margin-bottom: 1.625rem;
 }
 
-body .main .lower .left button {
+body .wrapper .main .lower .left button {
   color: white;
   font-size: 1rem;
   font-weight: 700;
@@ -144,7 +145,7 @@ body .main .lower .left button {
           box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
 }
 
-body .main .lower .right {
+body .wrapper .main .lower .right {
   padding: 2.5rem;
   width: 50%;
   height: 100%;
@@ -152,7 +153,7 @@ body .main .lower .right {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-body .main .lower .right h3 {
+body .wrapper .main .lower .right h3 {
   color: white;
   font-size: 1.125rem;
   font-weight: 700;
@@ -160,7 +161,7 @@ body .main .lower .right h3 {
   margin-bottom: 1.125rem;
 }
 
-body .main .lower .right .text-wrapper p {
+body .wrapper .main .lower .right .text-wrapper p {
   color: white;
   font-size: 0.875rem;
   font-weight: 400;
