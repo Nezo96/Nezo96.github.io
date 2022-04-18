@@ -20,4 +20,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Single Price Grid Component](https://nezo96.github.io/single-price-grid-component-master/index.html) - done (SASS) - with **figma sketch**
 
+- Huddle Landing Page - working (done 33%);
+
 Wish me luck and a lot of ☕.
