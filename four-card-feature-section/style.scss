@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Weight
+$e-light: 200;
+$regular: 400;
+$s-bold: 600;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+
+        .wrapper {
+            height: 100%;
+            padding: 80px 165px;
+
+            .heading {
+                max-width: 540px;
+                width: 100%;
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 36px;
+                    font-weight: $e-light;
+                    color: #4D4F62;
+                    letter-spacing: 0.25px;
+                    text-align: center;
+                }
+
+                h2 {
+                    font-size: 36px;
+                    font-weight: $s-bold;
+                    color: #4D4F62;
+                    letter-spacing: 0.25px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: $regular;
+                    color: #4D4F62;
+                    letter-spacing: 0.1px;
+                    line-height: 25px;
+                    text-align: center;
+                    margin-top: 16px;
+                }
+            }
+
+            .body {
+                width: 100%;
+                margin-top: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .box_one {
+                    max-width: 350px;
+                    max-height: 250px;
+                    padding: 32px;
+                    border-radius: 8px;
+                    border-top: 4px solid $cyan;
+                    background-color: #fff;
+                    box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+
+                    h4 {
+                        font-size: 20px;
+                        font-weight: $s-bold;
+                        text-align: left;
+                        color: #4D4F62;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: $regular;
+                        text-align: left;
+                        letter-spacing: 0.09px;
+                        line-height: 23px;
+                        color: #4D4F62;
+                        margin-top: 6px;
+                    }
+
+                    img {
+                        float: right;
+                        max-width: 64px;
+                        max-height: 64px;
+                        margin-top: 40px;
+                    }
+                }
+
+                .box-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 30px;
+
+                    .box_two {
+                        max-width: 350px;
+                        max-height: 250px;
+                        padding: 32px;
+                        border-radius: 8px;
+                        border-top: 4px solid $red;
+                        background-color: #fff;
+                        box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+
+                        h4 {
+                            font-size: 20px;
+                            font-weight: $s-bold;
+                            text-align: left;
+                            color: #4D4F62;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            font-weight: $regular;
+                            text-align: left;
+                            letter-spacing: 0.09px;
+                            line-height: 23px;
+                            color: #4D4F62;
+                            margin-top: 6px;
+                        }
+
+                        img {
+                            float: right;
+                            max-width: 64px;
+                            max-height: 64px;
+                            margin-top: 40px;
+                        }
+                    }
+
+                    .box_three {
+                        max-width: 350px;
+                        max-height: 250px;
+                        padding: 32px;
+                        border-radius: 8px;
+                        border-top: 4px solid $orange;
+                        background-color: #fff;
+                        box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+                        margin-top: 30px;
+
+                        h4 {
+                            font-size: 20px;
+                            font-weight: $s-bold;
+                            text-align: left;
+                            color: #4D4F62;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            font-weight: $regular;
+                            text-align: left;
+                            letter-spacing: 0.09px;
+                            line-height: 23px;
+                            color: #4D4F62;
+                            margin-top: 6px;
+                        }
+
+                        img {
+                            float: right;
+                            max-width: 64px;
+                            max-height: 64px;
+                            margin-top: 40px;
+                        }
+                    }
+                }
+
+                .box_four {
+                    max-width: 350px;
+                    max-height: 250px;
+                    padding: 32px;
+                    border-radius: 8px;
+                    border-top: 4px solid $blue;
+                    background-color: #fff;
+                    box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+
+                    h4 {
+                        font-size: 20px;
+                        font-weight: $s-bold;
+                        text-align: left;
+                        color: #4D4F62;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: $regular;
+                        text-align: left;
+                        letter-spacing: 0.09px;
+                        line-height: 23px;
+                        color: #4D4F62;
+                        margin-top: 6px;
+                    }
+
+                    img {
+                        float: right;
+                        max-width: 64px;
+                        max-height: 64px;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,4 +22,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Huddle Landing Page - working (done 33%);
 
+- Four Card Feature Section - done 50% (need responsive)
+
 Wish me luck and a lot of ☕.
