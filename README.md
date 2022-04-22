@@ -22,6 +22,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Huddle Landing Page - working (done 33%);
 
-- [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done 50% (need responsive)
+- [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done (SASS) **RESPONSIVE BELLOW 600px** - with **figma sketch** 
 
 Wish me luck and a lot of ☕.
