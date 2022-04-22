@@ -230,4 +230,127 @@ body main .wrapper .body .box_four img {
   max-height: 64px;
   margin-top: 40px;
 }
+
+@media screen and (max-width: 992px) {
+  body main {
+    height: 100vh;
+  }
+  body main .wrapper {
+    padding-top: 85px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 78px;
+  }
+  body main .wrapper .heading {
+    width: 100%;
+  }
+  body main .wrapper .heading h1 {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.17px;
+  }
+  body main .wrapper .heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.17px;
+  }
+  body main .wrapper .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  body main .wrapper .body {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+  body main .wrapper .body .box_one {
+    max-width: 350px;
+    max-height: 250px;
+    padding: 32px;
+  }
+  body main .wrapper .body .box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px 0;
+  }
+  body main .wrapper .body .box-wrapper .box_two {
+    max-width: 350px;
+    max-height: 250px;
+    padding: 32px;
+  }
+  body main .wrapper .body .box-wrapper .box_three {
+    max-width: 350px;
+    max-height: 250px;
+    padding: 32px;
+    margin-top: 30px;
+  }
+  body main .wrapper .body .box_four {
+    max-width: 350px;
+    max-height: 250px;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body main .wrapper .heading h1 {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.17px;
+  }
+  body main .wrapper .heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.17px;
+  }
+  body main .wrapper .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  body main .wrapper .body {
+    margin-top: 76px;
+  }
+  body main .wrapper .body .box_one {
+    max-width: 311px;
+    max-height: 222px;
+    padding: 28px;
+  }
+  body main .wrapper .body .box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 25px 0;
+  }
+  body main .wrapper .body .box-wrapper .box_two {
+    max-width: 311px;
+    max-height: 222px;
+    padding: 28px;
+  }
+  body main .wrapper .body .box-wrapper .box_three {
+    max-width: 311px;
+    max-height: 222px;
+    padding: 28px;
+    margin-top: 25px;
+  }
+  body main .wrapper .body .box_four {
+    max-width: 311px;
+    max-height: 222px;
+    padding: 28px;
+    margin-bottom: 78px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
