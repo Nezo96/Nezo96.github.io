@@ -57,6 +57,7 @@ body main .wrapper .heading p {
   line-height: 25px;
   text-align: center;
   margin-top: 16px;
+  opacity: 50%;
 }
 
 body main .wrapper .body {
@@ -78,10 +79,19 @@ body main .wrapper .body .box_one {
   max-height: 250px;
   padding: 32px;
   border-radius: 8px;
-  border-top: 4px solid #45d3d3;
   background-color: #fff;
   -webkit-box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
           box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+body main .wrapper .body .box_one .border {
+  position: absolute;
+  width: 100%;
+  border: 3px solid #45d3d3;
+  border-radius: 8px 8px 0 0;
+  top: 0px;
+  left: 0;
 }
 
 body main .wrapper .body .box_one h4 {
@@ -99,6 +109,7 @@ body main .wrapper .body .box_one p {
   line-height: 23px;
   color: #4D4F62;
   margin-top: 6px;
+  opacity: 50%;
 }
 
 body main .wrapper .body .box_one img {
@@ -130,10 +141,19 @@ body main .wrapper .body .box-wrapper .box_two {
   max-height: 250px;
   padding: 32px;
   border-radius: 8px;
-  border-top: 4px solid #ea5353;
   background-color: #fff;
   -webkit-box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
           box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+body main .wrapper .body .box-wrapper .box_two .border {
+  position: absolute;
+  width: 100%;
+  border: 3px solid #ea5353;
+  border-radius: 8px 8px 0 0;
+  top: 0px;
+  left: 0;
 }
 
 body main .wrapper .body .box-wrapper .box_two h4 {
@@ -151,6 +171,7 @@ body main .wrapper .body .box-wrapper .box_two p {
   line-height: 23px;
   color: #4D4F62;
   margin-top: 6px;
+  opacity: 50%;
 }
 
 body main .wrapper .body .box-wrapper .box_two img {
@@ -165,11 +186,20 @@ body main .wrapper .body .box-wrapper .box_three {
   max-height: 250px;
   padding: 32px;
   border-radius: 8px;
-  border-top: 4px solid #fcaf4a;
   background-color: #fff;
   -webkit-box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
           box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
   margin-top: 30px;
+  position: relative;
+}
+
+body main .wrapper .body .box-wrapper .box_three .border {
+  position: absolute;
+  width: 100%;
+  border: 3px solid #fcaf4a;
+  border-radius: 8px 8px 0 0;
+  top: 0px;
+  left: 0;
 }
 
 body main .wrapper .body .box-wrapper .box_three h4 {
@@ -187,6 +217,7 @@ body main .wrapper .body .box-wrapper .box_three p {
   line-height: 23px;
   color: #4D4F62;
   margin-top: 6px;
+  opacity: 50%;
 }
 
 body main .wrapper .body .box-wrapper .box_three img {
@@ -201,10 +232,19 @@ body main .wrapper .body .box_four {
   max-height: 250px;
   padding: 32px;
   border-radius: 8px;
-  border-top: 4px solid #549ef2;
   background-color: #fff;
   -webkit-box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
           box-shadow: 0 15px 30px -11px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+body main .wrapper .body .box_four .border {
+  position: absolute;
+  width: 100%;
+  border: 3px solid #549ef2;
+  border-radius: 8px 8px 0 0;
+  top: 0px;
+  left: 0;
 }
 
 body main .wrapper .body .box_four h4 {
@@ -222,6 +262,7 @@ body main .wrapper .body .box_four p {
   line-height: 23px;
   color: #4D4F62;
   margin-top: 6px;
+  opacity: 50%;
 }
 
 body main .wrapper .body .box_four img {
@@ -231,18 +272,38 @@ body main .wrapper .body .box_four img {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body main {
-    height: 100vh;
+    width: 100%;
   }
   body main .wrapper {
+    width: 100%;
     padding-top: 85px;
     padding-left: 32px;
-    padding-right: 32px;
     padding-bottom: 78px;
+    padding-right: 32px;
+    height: 100vh;
   }
   body main .wrapper .heading {
     width: 100%;
+    max-width: 311px;
   }
   body main .wrapper .heading h1 {
     font-size: 24px;
@@ -255,84 +316,45 @@ body main .wrapper .body .box_four img {
     letter-spacing: 0.17px;
   }
   body main .wrapper .heading p {
+    margin-top: 16px;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.1px;
     line-height: 25px;
-    text-align: center;
-    margin-top: 16px;
   }
   body main .wrapper .body {
     width: 100%;
-    height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 60px;
-  }
-  body main .wrapper .body .box_one {
-    max-width: 350px;
-    max-height: 250px;
-    padding: 32px;
-  }
-  body main .wrapper .body .box-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 30px 0;
-  }
-  body main .wrapper .body .box-wrapper .box_two {
-    max-width: 350px;
-    max-height: 250px;
-    padding: 32px;
-  }
-  body main .wrapper .body .box-wrapper .box_three {
-    max-width: 350px;
-    max-height: 250px;
-    padding: 32px;
-    margin-top: 30px;
-  }
-  body main .wrapper .body .box_four {
-    max-width: 350px;
-    max-height: 250px;
-    padding: 32px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body main .wrapper .heading h1 {
-    font-size: 24px;
-    font-weight: 200;
-    letter-spacing: 0.17px;
-  }
-  body main .wrapper .heading h2 {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.17px;
-  }
-  body main .wrapper .heading p {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 25px;
-    text-align: center;
-    margin-top: 16px;
-  }
-  body main .wrapper .body {
     margin-top: 76px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main .wrapper .body .box_one {
     max-width: 311px;
     max-height: 222px;
     padding: 28px;
   }
+  body main .wrapper .body .box_one h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body main .wrapper .body .box_one p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    margin-top: 1px;
+  }
+  body main .wrapper .body .box_one img {
+    max-width: 57px;
+    max-height: 57px;
+    margin-top: 33px;
+  }
   body main .wrapper .body .box-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin: 25px 0;
   }
   body main .wrapper .body .box-wrapper .box_two {
@@ -340,17 +362,64 @@ body main .wrapper .body .box_four img {
     max-height: 222px;
     padding: 28px;
   }
+  body main .wrapper .body .box-wrapper .box_two h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body main .wrapper .body .box-wrapper .box_two p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    margin-top: 1px;
+  }
+  body main .wrapper .body .box-wrapper .box_two img {
+    max-width: 57px;
+    max-height: 57px;
+    margin-top: 33px;
+  }
   body main .wrapper .body .box-wrapper .box_three {
     max-width: 311px;
     max-height: 222px;
     padding: 28px;
-    margin-top: 25px;
+  }
+  body main .wrapper .body .box-wrapper .box_three h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body main .wrapper .body .box-wrapper .box_three p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    margin-top: 1px;
+  }
+  body main .wrapper .body .box-wrapper .box_three img {
+    max-width: 57px;
+    max-height: 57px;
+    margin-top: 33px;
   }
   body main .wrapper .body .box_four {
     max-width: 311px;
     max-height: 222px;
     padding: 28px;
     margin-bottom: 78px;
+  }
+  body main .wrapper .body .box_four h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body main .wrapper .body .box_four p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    margin-top: 1px;
+  }
+  body main .wrapper .body .box_four img {
+    max-width: 57px;
+    max-height: 57px;
+    margin-top: 33px;
   }
 }
 /*# sourceMappingURL=style.css.map */

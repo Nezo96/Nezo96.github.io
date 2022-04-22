@@ -61,6 +61,7 @@ body {
                     line-height: 25px;
                     text-align: center;
                     margin-top: 16px;
+                    opacity: 50%;
                 }
             }
 
@@ -76,9 +77,20 @@ body {
                     max-height: 250px;
                     padding: 32px;
                     border-radius: 8px;
-                    border-top: 4px solid $cyan;
                     background-color: #fff;
                     box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+                    position: relative;
+
+                    .border {
+                        position: absolute;
+                        width: 100%;
+                        // height: 4px;
+                        // background-color: $cyan;
+                        border: 3px solid $cyan;
+                        border-radius: 8px 8px 0 0;
+                        top: 0px;
+                        left: 0;
+                    }
 
                     h4 {
                         font-size: 20px;
@@ -95,6 +107,7 @@ body {
                         line-height: 23px;
                         color: #4D4F62;
                         margin-top: 6px;
+                        opacity: 50%;
                     }
 
                     img {
@@ -117,9 +130,20 @@ body {
                         max-height: 250px;
                         padding: 32px;
                         border-radius: 8px;
-                        border-top: 4px solid $red;
                         background-color: #fff;
                         box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+                        position: relative;
+
+                        .border {
+                            position: absolute;
+                            width: 100%;
+                            // height: 4px;
+                            // background-color: $cyan;
+                            border: 3px solid $red;
+                            border-radius: 8px 8px 0 0;
+                            top: 0px;
+                            left: 0;
+                        }
 
                         h4 {
                             font-size: 20px;
@@ -136,6 +160,7 @@ body {
                             line-height: 23px;
                             color: #4D4F62;
                             margin-top: 6px;
+                            opacity: 50%;
                         }
 
                         img {
@@ -151,10 +176,21 @@ body {
                         max-height: 250px;
                         padding: 32px;
                         border-radius: 8px;
-                        border-top: 4px solid $orange;
                         background-color: #fff;
                         box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
                         margin-top: 30px;
+                        position: relative;
+
+                        .border {
+                            position: absolute;
+                            width: 100%;
+                            // height: 4px;
+                            // background-color: $cyan;
+                            border: 3px solid $orange;
+                            border-radius: 8px 8px 0 0;
+                            top: 0px;
+                            left: 0;
+                        }
 
                         h4 {
                             font-size: 20px;
@@ -171,6 +207,7 @@ body {
                             line-height: 23px;
                             color: #4D4F62;
                             margin-top: 6px;
+                            opacity: 50%;
                         }
 
                         img {
@@ -187,9 +224,20 @@ body {
                     max-height: 250px;
                     padding: 32px;
                     border-radius: 8px;
-                    border-top: 4px solid $blue;
                     background-color: #fff;
                     box-shadow: 0 15px 30px -11px rgba($color: #000000, $alpha: 0.25);
+                    position: relative;
+
+                    .border {
+                        position: absolute;
+                        width: 100%;
+                        // height: 4px;
+                        // background-color: $cyan;
+                        border: 3px solid $blue;
+                        border-radius: 8px 8px 0 0;
+                        top: 0px;
+                        left: 0;
+                    }
 
                     h4 {
                         font-size: 20px;
@@ -206,6 +254,7 @@ body {
                         line-height: 23px;
                         color: #4D4F62;
                         margin-top: 6px;
+                        opacity: 50%;
                     }
 
                     img {
@@ -220,90 +269,30 @@ body {
     }
 }
 
-@media screen and (max-width: 992px) {
-    body {
-
-        main {
-            height: 100vh;
-
-            .wrapper {
-                padding-top: 85px;
-                padding-left: 32px;
-                padding-right: 32px;
-                padding-bottom: 78px;
-
-                .heading {
-                    width: 100%;
-
-                    h1 {
-                        font-size: 24px;
-                        font-weight: $e-light;
-                        letter-spacing: 0.17px;
-                    }
-
-                    h2 {
-                        font-size: 24px;
-                        font-weight: $s-bold;
-                        letter-spacing: 0.17px;
-                    }
-
-                    p {
-                        font-size: 15px;
-                        font-weight: $regular;
-                        letter-spacing: 0.1px;
-                        line-height: 25px;
-                        text-align: center;
-                        margin-top: 16px;
-                    }
-                }
-
-                .body {
-                    width: 100%;
-                    height: 100%;
-                    flex-direction: column;
-                    margin-top: 60px;
-
-                    .box_one {
-                        max-width: 350px;
-                        max-height: 250px;
-                        padding: 32px;
-                    }
-
-                    .box-wrapper {
-                        flex-direction: column;
-                        margin: 30px 0;
-
-                        .box_two {
-                            max-width: 350px;
-                            max-height: 250px;
-                            padding: 32px;
-                        }
-
-                        .box_three {
-                            max-width: 350px;
-                            max-height: 250px;
-                            padding: 32px;
-                            margin-top: 30px;
-                        }
-                    }
-
-                    .box_four {
-                        max-width: 350px;
-                        max-height: 250px;
-                        padding: 32px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 600px) {
     body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         main {
+            width: 100%;
+
             .wrapper {
+                width: 100%;
+                padding-top: 85px;
+                padding-left: 32px;
+                padding-bottom: 78px;
+                padding-right: 32px;
+                height: 100vh;
 
                 .heading {
+                    width: 100%;
+                    max-width: 311px;
+
                     h1 {
                         font-size: 24px;
                         font-weight: $e-light;
@@ -317,39 +306,96 @@ body {
                     }
 
                     p {
+                        margin-top: 16px;
                         font-size: 15px;
                         font-weight: $regular;
                         letter-spacing: 0.1px;
                         line-height: 25px;
-                        text-align: center;
-                        margin-top: 16px;
                     }
                 }
 
                 .body {
+                    width: 100%;
                     margin-top: 76px;
+                    display: flex;
+                    flex-direction: column;
 
                     .box_one {
                         max-width: 311px;
                         max-height: 222px;
                         padding: 28px;
+
+                        h1 {
+                            font-size: 20px;
+                            font-weight: $s-bold;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            font-weight: $regular;
+                            line-height: 23px;
+                            letter-spacing: 0.09px;
+                            margin-top: 1px
+                        }
+
+                        img {
+                            max-width: 57px;
+                            max-height: 57px;
+                            margin-top: 33px;
+                        }
                     }
 
                     .box-wrapper {
-                        flex-direction: column;
                         margin: 25px 0;
 
                         .box_two {
                             max-width: 311px;
                             max-height: 222px;
                             padding: 28px;
+
+                            h1 {
+                                font-size: 20px;
+                                font-weight: $s-bold;
+                            }
+
+                            p {
+                                font-size: 13px;
+                                font-weight: $regular;
+                                line-height: 23px;
+                                letter-spacing: 0.09px;
+                                margin-top: 1px
+                            }
+
+                            img {
+                                max-width: 57px;
+                                max-height: 57px;
+                                margin-top: 33px;
+                            }
                         }
 
                         .box_three {
                             max-width: 311px;
                             max-height: 222px;
                             padding: 28px;
-                            margin-top: 25px;
+
+                            h1 {
+                                font-size: 20px;
+                                font-weight: $s-bold;
+                            }
+
+                            p {
+                                font-size: 13px;
+                                font-weight: $regular;
+                                line-height: 23px;
+                                letter-spacing: 0.09px;
+                                margin-top: 1px
+                            }
+
+                            img {
+                                max-width: 57px;
+                                max-height: 57px;
+                                margin-top: 33px;
+                            }
                         }
                     }
 
@@ -358,6 +404,25 @@ body {
                         max-height: 222px;
                         padding: 28px;
                         margin-bottom: 78px;
+
+                        h1 {
+                            font-size: 20px;
+                            font-weight: $s-bold;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            font-weight: $regular;
+                            line-height: 23px;
+                            letter-spacing: 0.09px;
+                            margin-top: 1px
+                        }
+
+                        img {
+                            max-width: 57px;
+                            max-height: 57px;
+                            margin-top: 33px;
+                        }
                     }
                 }
             }
