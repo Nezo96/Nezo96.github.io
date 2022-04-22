@@ -22,6 +22,10 @@ body {
           align-items: center;
 }
 
+body main {
+  height: 100%;
+}
+
 body main .wrapper {
   height: 100%;
   padding: 80px 165px;
@@ -270,6 +274,10 @@ body main .wrapper .body .box_four img {
   max-width: 64px;
   max-height: 64px;
   margin-top: 40px;
+}
+
+body main .wrapper footer {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {

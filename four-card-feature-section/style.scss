@@ -27,6 +27,7 @@ body {
     align-items: center;
 
     main {
+        height: 100%;
 
         .wrapper {
             height: 100%;
@@ -264,6 +265,10 @@ body {
                         margin-top: 40px;
                     }
                 }
+            }
+
+            footer {
+                text-align: center;
             }
         }
     }
