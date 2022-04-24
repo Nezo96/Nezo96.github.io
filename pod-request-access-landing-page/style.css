@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Chivo', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #121725;
+}
+
+body .container {
+  max-width: 1440px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 165px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  margin: 0 auto;
+}
+
+body .container .wrapper {
+  height: 640px;
+  background-image: url("images/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+}
+
+body .container .wrapper .dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+body .container .wrapper .logo img {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container .wrapper .main {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #121725;
+  padding-top: 88px;
+  padding-right: 58px;
+  max-width: 723px;
+}
+
+body .container .wrapper .main h1 {
+  text-align: left;
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: white;
+}
+
+body .container .wrapper .main h1 span {
+  color: #54E6AF;
+}
+
+body .container .wrapper .main p {
+  text-align: left;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 445px;
+  color: #C2CBE5;
+}
+
+body .container .wrapper .main form {
+  margin-top: 40px;
+}
+
+body .container .wrapper .main form .form-wrapper {
+  position: relative;
+  width: 427px;
+  height: 56px;
+}
+
+body .container .wrapper .main form .form-wrapper input {
+  width: 100%;
+  height: 100%;
+  background-color: #2C344B;
+  border: none;
+  border-radius: 28px;
+  color: white;
+  padding-left: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  outline: none;
+}
+
+body .container .wrapper .main form .form-wrapper input::-webkit-input-placeholder {
+  color: #979797;
+}
+
+body .container .wrapper .main form .form-wrapper input:-ms-input-placeholder {
+  color: #979797;
+}
+
+body .container .wrapper .main form .form-wrapper input::-ms-input-placeholder {
+  color: #979797;
+}
+
+body .container .wrapper .main form .form-wrapper input::placeholder {
+  color: #979797;
+}
+
+body .container .wrapper .main form .form-wrapper .btn {
+  position: absolute;
+  right: 0;
+  padding: 9px 27px;
+  background-color: #54E6AF;
+  color: #121725;
+  border: none;
+  border-radius: 28px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+body .container .wrapper .main form .form-wrapper .btn:hover {
+  background-color: #B3FFE2;
+  cursor: pointer;
+}
+
+body .container .wrapper .main form .msg {
+  font-size: 12px;
+  font-weight: 700;
+  color: #FB3E3E;
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+body .container .wrapper .main .logos {
+  margin-top: 64px;
+}
+
+body .container .wrapper .main .logos img:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  body .container {
+    padding-left: 39px;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container .wrapper {
+    background-image: url("images/tablet/image-host.jpg");
+    background-position: top right;
+    height: 100%;
+  }
+  body .container .wrapper .dots {
+    bottom: 10;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body .container .wrapper .logo img {
+    margin-top: 50px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body .container .wrapper .main {
+    padding: 0;
+    padding-top: 93px;
+    margin-top: 258px;
+    width: 635px;
+    top: 0;
+    left: 0;
+  }
+  body .container .wrapper .main h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  body .container .wrapper .main p {
+    margin-top: 31px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

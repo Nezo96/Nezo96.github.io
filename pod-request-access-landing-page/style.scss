@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #121725;
+
+    .container {
+        max-width: 1440px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 165px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+        margin: 0 auto;
+
+        .wrapper {
+            height: 640px;
+            background-image: url("images/desktop/image-host.jpg");
+            background-repeat: no-repeat;
+            background-position: center right;
+            position: relative;
+
+            .dots {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transform: translateY(50%);
+            }
+
+            .logo {
+                img {
+                    transform: translateY(-50%);
+                }
+            }
+
+            .main {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: #121725;
+                padding-top: 88px;
+                padding-right: 58px;
+                max-width: 723px;
+
+                h1 {
+                    text-align: left;
+                    font-size: 52px;
+                    font-weight: $light;
+                    line-height: 62px;
+                    text-transform: uppercase;
+                    color: white;
+
+                    span {
+                        color: #54E6AF;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    margin-top: 24px;
+                    font-size: 18px;
+                    font-weight: $light;
+                    line-height: 28px;
+                    max-width: 445px;
+                    color: #C2CBE5;
+                }
+
+                form {
+                    margin-top: 40px;
+
+                    .form-wrapper {
+                        position: relative;
+                        width: 427px;
+                        height: 56px;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            background-color: #2C344B;
+                            border: none;
+                            border-radius: 28px;
+                            color: white;
+                            padding-left: 32px;
+                            padding-top: 14px;
+                            padding-bottom: 14px;
+                            outline: none;
+
+                            &::placeholder {
+                                color: #979797;
+                            }
+
+                            // &:focus {
+                            //     color: white;
+                            //     padding-left: 32px;
+                            //     padding-top: 14px;
+                            //     padding-bottom: 14px;
+                            // }
+                        }
+
+                        .btn {
+                            position: absolute;
+                            right: 0;
+                            padding: 9px 27px;
+                            background-color: #54E6AF;
+                            color: #121725;
+                            border: none;
+                            border-radius: 28px;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                            font-weight: $bold;
+                            line-height: 28px;
+
+                            &:hover {
+                                background-color: #B3FFE2;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .msg {
+                        font-size: 12px;
+                        font-weight: $bold;
+                        color: #FB3E3E;
+                        margin-top: 8px;
+                        margin-left: 32px;
+                    }
+                }
+
+                .logos {
+                    margin-top: 64px;
+
+                    img {
+                        &:not(:last-child) {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .container {
+            padding-left: 39px;
+            padding-top: 0;
+            padding-bottom: 0;
+            justify-content: flex-start;
+
+            .wrapper {
+                background-image: url("images/tablet/image-host.jpg");
+                background-position: top right;
+                height: 100%;
+
+                .dots {
+                    bottom: 10;
+                    left: 0;
+                    transform: none;
+                }
+
+                .logo {
+                    img {
+                        margin-top: 50px;
+                        transform: none;
+                    }
+                }
+
+                .main {
+                    padding: 0;
+                    padding-top: 93px;
+                    margin-top: 258px;
+                    width: 635px;
+                    top: 0;
+                    left: 0;
+
+                    h1 {
+                        font-size: 48px;
+                        line-height: 58px;
+
+                    }
+
+                    p {
+                        margin-top: 31px;
+                    }
+                }
+            }
+        }
+    }
+}

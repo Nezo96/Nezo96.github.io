@@ -24,4 +24,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done (SASS) - **RESPONSIVE BELLOW 600px** - with **figma sketch** 
 
+- Pod Request Access Landing Page - working (done 75%);
+
 Wish me luck and a lot of ☕.
