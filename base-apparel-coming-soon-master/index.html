@@ -15,37 +15,37 @@
 
 <body>
   <main>
-    <section class="left">
-      <img src="images/logo.svg" alt="base apparel logo">
-      <div class="main">
-        <h2>We're</h2>
-        <h1>coming soon</h1>
-        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
-          up-to-date
-          with announcements and our launch deals.</p>
-        <form>
-          <div class="form-wrapper">
-            <input type="email" id="email" placeholder="Email Adress">
-            <button id="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-                <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="right">
-      <img src="images/hero-desktop.jpg" alt="hero image desktop">
-    </section>
-  </main>
+    <div class="header-logo">
+      <img class="logo" src="images/logo.svg" alt="">
+    </div>
+    <img class="hero-mobile" src="images/hero-mobile.jpg" alt="">
+    <div class="info-wrapper">
+      <h2>We're</h2>
+      <h1>coming soon</h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form id="newsletter">
+        <div class="form-control">
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/Nezo96/Nezo96.github.io">Radosalav | Nezo96</a>.
-    </p>
-  </footer>
+          <input class="input-email" type="email" id="email" placeholder="Email Address">
+
+          <div class="err-icon">
+            <img src="images/icon-error.svg" alt="">
+          </div>
+
+          <button id="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+            </svg>
+          </button>
+
+          <span class="err-msg">Please provide a valid email</span>
+
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
