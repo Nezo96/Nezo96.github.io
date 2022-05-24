@@ -26,4 +26,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Pod Request Access Landing Page - working (done 75%);
 
+- Base Apparel Coming Soon Master - working on (done Desktop without js and active states)
+
 Wish me luck and a lot of ☕.
