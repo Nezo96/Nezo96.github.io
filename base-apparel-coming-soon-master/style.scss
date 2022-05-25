@@ -152,3 +152,32 @@ $sbold: 600;
         }
     }
 }
+
+@media only screen and (min-width: 992px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        main {
+            max-width: 1440px;
+            height: 800px;
+            display: flex;
+
+            .header-logo {
+                order: 0;
+            }
+
+            img {
+                order: 2;
+                width: 610px;
+            }
+
+            .info-wrapper {
+                order: 1;
+            }
+        }
+    }
+}
