@@ -26,7 +26,7 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Pod Request Access Landing Page - working (done 75%);
 
-- [x] [Base Apparel Coming Soon Master](https://nezo96.github.io/base-apparel-coming-soon-master) Base Apparel Coming Soon Master - done (SASS)
+- [x] [Base Apparel Coming Soon Master](https://nezo96.github.io/base-apparel-coming-soon-master) Base Apparel Coming Soon Master - done (SASS),
  breakpoints **1200px** **900px** **768px** **375px** with **figma sketch**
 
 Wish me luck and a lot of ☕.
