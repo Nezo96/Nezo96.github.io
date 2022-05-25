@@ -19,165 +19,217 @@ $sbold: 600;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        width: 100%;
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        align-items: flex-start;
         height: 100vh;
+    }
 
-        main {
+    @media screen and (max-width: 375px) {
+        display: block;
+    }
+
+    main#desktop1 {
+        max-width: 1440px;
+        max-height: 800px;
+        display: flex;
+
+        @media screen and (max-width: 375px) {
             height: 100%;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 244, 244, 1));
+        }
 
-            .header-logo {
-                width: 100%;
-                height: 84px;
+        .left {
+            width: 100%;
+            padding: 64.91px 220px 162px 165px;
+            background-image: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 244, 244, 1));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #FAFAFA;
 
-                img {
+            @media screen and (max-width: 1200px) {
+                padding: 64.91px 110px 162px 90px;
+            }
+
+            @media screen and (max-width: 900px) {
+                padding: 64.91px 70px 162px 70px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                height: 100vh;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 244, 244, 1));
+            }
+
+            .header {
+                img.header-logo {
                     width: 100px;
-                    height: 20.89px;
-                    margin-top: 31px;
-                    margin-left: 32px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    padding: 31px 243px 32.11px 32px;
+                }
+
+            }
+
+            .desktop-hidden {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    width: 100%;
                 }
             }
 
-            img {
+            .content {
+                margin-top: 136.09px;
                 width: 100%;
-                height: 250px;
-            }
 
-            .info-wrapper {
-                padding: 64px 32px 92px 32px;
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                    padding-top: 64px;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
 
                 h2 {
-                    font-size: 40px;
+                    font-size: 64px;
                     font-weight: $light;
-                    line-height: 42px;
-                    letter-spacing: 10.83px;
-                    text-align: center;
+                    line-height: 64px;
+                    letter-spacing: 17.32px;
+                    text-align: left;
                     text-transform: uppercase;
                     color: $dred;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 40px;
+                        line-height: 42px;
+                        letter-spacing: 10.83px;
+                        text-align: center;
+                    }
                 }
 
                 h1 {
-                    font-size: 40px;
+                    font-size: 64px;
                     font-weight: $sbold;
-                    line-height: 42px;
-                    letter-spacing: 10.83px;
-                    text-align: center;
+                    line-height: 71px;
+                    letter-spacing: 17.32px;
+                    text-align: left;
                     text-transform: uppercase;
                     color: $dgred;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 40px;
+                        line-height: 42px;
+                        letter-spacing: 10.83px;
+                        text-align: center;
+                    }
                 }
 
                 p {
-                    font-size: 14px;
+                    margin-top: 32px;
+                    font-size: 16px;
                     font-weight: $regular;
-                    line-height: 22px;
-                    text-align: center;
+                    line-height: 28px;
+                    text-align: left;
                     color: $dred;
-                    margin-top: 16px;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-align: center;
+                    }
                 }
 
                 form {
-                    margin-top: 32px;
+                    margin-top: 40px;
                     width: 100%;
 
-                    .form-control {
+                    .form-contorl {
                         position: relative;
 
                         .input-email {
                             width: 100%;
-                            height: 48px;
+                            height: 56px;
                             border-radius: 28px;
                             border: solid 1px $dred;
-                            outline: none;
-                            opacity: 50%;
-                            background: transparent;
                             z-index: 0;
-                            padding: 11px 77px 9px 24px;
+                            background: transparent;
+                            padding: 15px 130px 13px 32px;
 
                             &:focus,
                             &:active {
-                                font-size: 14px;
-                                font-weight: $regular;
-                                line-height: 28px;
-                                text-align: left;
+                                outline: none;
                             }
 
                             &::placeholder {
-                                font-size: 14px;
-                                font-weight: $regular;
-                                line-height: 28px;
-                                text-align: left;
                                 color: $dred;
                             }
                         }
 
                         button {
                             position: absolute;
+                            background: linear-gradient(135deg, rgba(248, 191, 191, 1), rgba(238, 139, 139, 1));
+                            width: 100px;
+                            height: 56px;
                             top: 0;
                             right: 0;
-                            width: 64px;
-                            height: 48px;
-                            border-radius: 28px;
                             border: none;
-                            background: linear-gradient(135deg, rgba(248, 191, 191, 1), rgba(238, 139, 139, 1));
-                            box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.2476);
+                            border-radius: 28px;
                             z-index: 1;
+                            box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.5);
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 50%;
+                                box-shadow: 0px 15px 20px rgba(198, 110, 110, 1);
+                            }
                         }
 
                         .err-icon {
                             display: none;
                             position: absolute;
-                            top: 0;
-                            margin: 13px 72px 11px 215px;
-
-                            img {
-                                width: 24px;
-                                height: 24px;
-                            }
+                            width: 24px;
+                            height: 24px;
+                            right: 0;
+                            top: 17px;
+                            right: 116px;
                         }
+                    }
 
-                        .err-msg {
-                            display: none;
-                            margin-top: 8px;
-                            margin-left: 24px;
+                    .err-msg {
+                        display: none;
+
+                        span {
                             font-size: 13px;
                             font-weight: $regular;
+                            line-height: 28px;
                             text-align: left;
+                            margin-top: 4px;
+                            margin-left: 32px;
                             color: #F96464;
                         }
                     }
                 }
             }
         }
-    }
-}
 
-@media only screen and (min-width: 992px) {
-    body {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .right {
+            width: 100%;
+            background-image: url("images/hero-desktop.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
-        main {
-            max-width: 1440px;
-            height: 800px;
-            display: flex;
-
-            .header-logo {
-                order: 0;
-            }
-
-            img {
-                order: 2;
-                width: 610px;
-            }
-
-            .info-wrapper {
-                order: 1;
+            @media screen and (max-width: 768px) {
+                display: none;
             }
         }
     }
+
 }

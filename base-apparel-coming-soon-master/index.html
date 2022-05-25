@@ -14,37 +14,34 @@
 </head>
 
 <body>
-  <main>
-    <div class="header-logo">
-      <img class="logo" src="images/logo.svg" alt="">
-    </div>
-    <img class="hero-mobile" src="images/hero-mobile.jpg" alt="">
-    <div class="info-wrapper">
-      <h2>We're</h2>
-      <h1>coming soon</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form id="newsletter">
-        <div class="form-control">
-
-          <input class="input-email" type="email" id="email" placeholder="Email Address">
-
-          <div class="err-icon">
-            <img src="images/icon-error.svg" alt="">
+  <main id="desktop1">
+    <div class="left">
+      <div class="header">
+        <img class="header-logo" src="images/logo.svg" alt="">
+      </div>
+      <img class="desktop-hidden" src="images/hero-mobile.jpg" alt="">
+      <div class="content">
+        <h2>We're</h2>
+        <h1>coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+          up-to-date with announcements and our launch deals.</p>
+        <form id="newsletter">
+          <div class="form-contorl">
+            <input type="email" id="email" class="input-email" placeholder="Email Address">
+            <button type="submit" id="submit">
+              <img src="images/icon-arrow.svg" alt="">
+            </button>
+            <img class="err-icon" src="images/icon-error.svg" alt="">
           </div>
-
-          <button id="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
-            </svg>
-          </button>
-
-          <span class="err-msg">Please provide a valid email</span>
-
-        </div>
-      </form>
+          <div class="err-msg">
+            <span>Please provide a valid email</span>
+          </div>
+        </form>
+      </div>
     </div>
+    <div class="right"></div>
   </main>
+
   <script src="index.js"></script>
 </body>
 

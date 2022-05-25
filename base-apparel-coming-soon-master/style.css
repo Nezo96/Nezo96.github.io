@@ -7,180 +7,263 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
   body {
-    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 100vh;
-  }
-  body main {
-    height: 100%;
-    background: linear-gradient(135deg, white, #fff4f4);
-  }
-  body main .header-logo {
-    width: 100%;
-    height: 84px;
-  }
-  body main .header-logo img {
-    width: 100px;
-    height: 20.89px;
-    margin-top: 31px;
-    margin-left: 32px;
-  }
-  body main img {
-    width: 100%;
-    height: 250px;
-  }
-  body main .info-wrapper {
-    padding: 64px 32px 92px 32px;
-  }
-  body main .info-wrapper h2 {
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 42px;
-    letter-spacing: 10.83px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ce9797;
-  }
-  body main .info-wrapper h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 10.83px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #413a3a;
-  }
-  body main .info-wrapper p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: center;
-    color: #ce9797;
-    margin-top: 16px;
-  }
-  body main .info-wrapper form {
-    margin-top: 32px;
-    width: 100%;
-  }
-  body main .info-wrapper form .form-control {
-    position: relative;
-  }
-  body main .info-wrapper form .form-control .input-email {
-    width: 100%;
-    height: 48px;
-    border-radius: 28px;
-    border: solid 1px #ce9797;
-    outline: none;
-    opacity: 50%;
-    background: transparent;
-    z-index: 0;
-    padding: 11px 77px 9px 24px;
-  }
-  body main .info-wrapper form .form-control .input-email:focus, body main .info-wrapper form .form-control .input-email:active {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-  }
-  body main .info-wrapper form .form-control .input-email::-webkit-input-placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: #ce9797;
-  }
-  body main .info-wrapper form .form-control .input-email:-ms-input-placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: #ce9797;
-  }
-  body main .info-wrapper form .form-control .input-email::-ms-input-placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: #ce9797;
-  }
-  body main .info-wrapper form .form-control .input-email::placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: #ce9797;
-  }
-  body main .info-wrapper form .form-control button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 64px;
-    height: 48px;
-    border-radius: 28px;
-    border: none;
-    background: linear-gradient(135deg, #f8bfbf, #ee8b8b);
-    -webkit-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.2476);
-            box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.2476);
-    z-index: 1;
-  }
-  body main .info-wrapper form .form-control .err-icon {
-    display: none;
-    position: absolute;
-    top: 0;
-    margin: 13px 72px 11px 215px;
-  }
-  body main .info-wrapper form .form-control .err-icon img {
-    width: 24px;
-    height: 24px;
-  }
-  body main .info-wrapper form .form-control .err-msg {
-    display: none;
-    margin-top: 8px;
-    margin-left: 24px;
-    font-size: 13px;
-    font-weight: 400;
-    text-align: left;
-    color: #F96464;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media screen and (max-width: 375px) {
   body {
-    width: 100%;
+    display: block;
+  }
+}
+
+body main#desktop1 {
+  max-width: 1440px;
+  max-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  body main#desktop1 {
+    height: 100%;
+  }
+}
+
+body main#desktop1 .left {
+  width: 100%;
+  padding: 64.91px 220px 162px 165px;
+  background-image: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff4f4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FAFAFA;
+}
+
+@media screen and (max-width: 1200px) {
+  body main#desktop1 .left {
+    padding: 64.91px 110px 162px 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body main#desktop1 .left {
+    padding: 64.91px 70px 162px 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left {
+    padding: 0;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    background: linear-gradient(135deg, white, #fff4f4);
   }
-  body main {
-    max-width: 1440px;
-    height: 800px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+
+body main#desktop1 .left .header img.header-logo {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .header {
+    padding: 31px 243px 32.11px 32px;
   }
-  body main .header-logo {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+}
+
+body main#desktop1 .left .desktop-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .desktop-hidden {
+    display: block;
+    width: 100%;
   }
-  body main img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 610px;
+}
+
+body main#desktop1 .left .content {
+  margin-top: 136.09px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .content {
+    margin: 0;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
-  body main .info-wrapper {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+}
+
+body main#desktop1 .left .content h2 {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 17.32px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ce9797;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .content h2 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.83px;
+    text-align: center;
+  }
+}
+
+body main#desktop1 .left .content h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 71px;
+  letter-spacing: 17.32px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #413a3a;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .content h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.83px;
+    text-align: center;
+  }
+}
+
+body main#desktop1 .left .content p {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #ce9797;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .left .content p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+body main#desktop1 .left .content form {
+  margin-top: 40px;
+  width: 100%;
+}
+
+body main#desktop1 .left .content form .form-contorl {
+  position: relative;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  border: solid 1px #ce9797;
+  z-index: 0;
+  background: transparent;
+  padding: 15px 130px 13px 32px;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email:focus, body main#desktop1 .left .content form .form-contorl .input-email:active {
+  outline: none;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+body main#desktop1 .left .content form .form-contorl .input-email::placeholder {
+  color: #ce9797;
+}
+
+body main#desktop1 .left .content form .form-contorl button {
+  position: absolute;
+  background: linear-gradient(135deg, #f8bfbf, #ee8b8b);
+  width: 100px;
+  height: 56px;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 28px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.5);
+          box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.5);
+}
+
+body main#desktop1 .left .content form .form-contorl button:hover {
+  cursor: pointer;
+  opacity: 50%;
+  -webkit-box-shadow: 0px 15px 20px #c66e6e;
+          box-shadow: 0px 15px 20px #c66e6e;
+}
+
+body main#desktop1 .left .content form .form-contorl .err-icon {
+  display: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 17px;
+  right: 116px;
+}
+
+body main#desktop1 .left .content form .err-msg {
+  display: none;
+}
+
+body main#desktop1 .left .content form .err-msg span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 4px;
+  margin-left: 32px;
+  color: #F96464;
+}
+
+body main#desktop1 .right {
+  width: 100%;
+  background-image: url("images/hero-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  body main#desktop1 .right {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
