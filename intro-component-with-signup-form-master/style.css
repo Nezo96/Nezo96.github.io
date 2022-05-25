@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: #FF7979;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body main {
+  width: 1440px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 121px 165px;
+}
+
+@media screen and (max-width: 1440px) {
+  body main {
+    padding: 121px 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body main {
+    padding: 121px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+body main .left {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body main .left {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+body main .left .text-wrapper {
+  padding: 169px 45px 169px 0;
+}
+
+@media screen and (max-width: 768px) {
+  body main .left .text-wrapper {
+    padding: 88px 24px 64px 24px;
+  }
+}
+
+body main .left .text-wrapper h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: -0.52px;
+  text-align: left;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body main .left .text-wrapper h1 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    text-align: center;
+  }
+}
+
+body main .left .text-wrapper p {
+  margin-top: 11px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body main .left .text-wrapper p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+body main .right {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body main .right {
+    width: 100%;
+    padding: 0 24px 68px 24px;
+  }
+}
+
+body main .right .info-box {
+  padding: 17px 112px;
+  background-color: #5E54A4;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1469);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1469);
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  body main .right .info-box {
+    padding: 17px 64px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  body main .right .info-box {
+    padding: 17px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body main .right .info-box {
+    padding: 18px 67px;
+  }
+}
+
+body main .right .info-box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  color: #fff;
+}
+
+body main .right .info-box span {
+  font-weight: 700;
+}
+
+body main .right form {
+  margin-top: 24px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1469);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1469);
+}
+
+@media screen and (max-width: 768px) {
+  body main .right form {
+    padding: 24px;
+  }
+}
+
+body main .right form .form-control {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body main .right form .form-control .err-fname,
+body main .right form .form-control .err-lname,
+body main .right form .form-control .err-email,
+body main .right form .form-control .err-pass {
+  display: none;
+}
+
+body main .right form .form-control small {
+  display: block;
+  text-align: right;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  color: #FF7979;
+}
+
+body main .right form .form-control .err-fname {
+  display: none;
+}
+
+body main .right form .form-control .form-input {
+  width: 100%;
+  height: 56px;
+  border-radius: 5px;
+  border: solid 1px #DEDEDE;
+  padding: 15px 32px;
+}
+
+@media screen and (max-width: 768px) {
+  body main .right form .form-control .form-input {
+    padding: 15px 19.41px;
+  }
+}
+
+body main .right form .form-control .form-input:focus, body main .right form .form-control .form-input:active {
+  border: solid 1px #5E54A4;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+body main .right form .form-control .form-input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+body main .right form .form-control .form-input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+body main .right form .form-control .form-input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+body main .right form .form-control .form-input::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+body main .right form .submit {
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #38CC8B;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.0909);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.0909);
+}
+
+body main .right form .submit:hover {
+  background-color: #77E2B3;
+  cursor: pointer;
+}
+
+body main .right form p {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 8px;
+  color: #BAB7D4;
+}
+
+@media screen and (max-width: 768px) {
+  body main .right form p {
+    line-height: 21px;
+  }
+}
+
+body main .right form p span {
+  font-weight: 700;
+  color: #FF7979;
+}
+/*# sourceMappingURL=style.css.map */

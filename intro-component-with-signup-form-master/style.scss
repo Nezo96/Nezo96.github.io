@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$regular: 400;
+$medium: 500;
+$sbold: 600;
+$bold: 700;
+
+$red: #FF7979;
+$green: #38CC8B;
+$violet: #5E54A4;
+$dark: #3D3B48;
+$gray: #DEDEDE;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: $red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    main {
+        width: 1440px;
+        height: 800px;
+        display: flex;
+        margin: 0 auto;
+        padding: 121px 165px;
+
+        @media screen and (max-width: 1440px) {
+            padding: 121px 100px;
+        }
+
+        @media screen and (max-width: 900px) {
+            padding: 121px 32px;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding: 0;
+            }
+
+            .text-wrapper {
+                padding: 169px 45px 169px 0;
+
+                @media screen and (max-width: 768px) {
+                    padding: 88px 24px 64px 24px;
+                }
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: $bold;
+                    line-height: 55px;
+                    letter-spacing: -0.52px;
+                    text-align: left;
+                    color: #fff;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 28px;
+                        line-height: 36px;
+                        letter-spacing: -0.29px;
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    margin-top: 11px;
+                    font-size: 16px;
+                    font-weight: $medium;
+                    line-height: 26px;
+                    text-align: left;
+                    color: #fff;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding: 0 24px 68px 24px;
+            }
+
+            .info-box {
+                padding: 17px 112px;
+                background-color: $violet;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 8px 0 rgba($color: #000000, $alpha: 0.1469);
+                ;
+                text-align: center;
+
+                @media screen and (max-width: 1440px) {
+                    padding: 17px 64px;
+                }
+
+                @media screen and (max-width: 1440px) {
+                    padding: 17px 40px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    padding: 18px 67px;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: $regular;
+                    line-height: 26px;
+                    letter-spacing: 0.27px;
+                    color: #fff;
+                }
+
+                span {
+                    font-weight: $bold;
+                }
+            }
+
+            form {
+                margin-top: 24px;
+                padding: 40px;
+                background-color: #fff;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 8px 0 rgba($color: #000000, $alpha: 0.1469);
+
+                @media screen and (max-width: 768px) {
+                    padding: 24px;
+                }
+
+                .form-control {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .err-fname,
+                    .err-lname,
+                    .err-email,
+                    .err-pass {
+                        display: none;
+                    }
+
+                    small {
+                        display: block;
+                        text-align: right;
+                        margin-top: 6px;
+                        font-size: 11px;
+                        font-weight: $medium;
+                        font-style: italic;
+                        color: $red;
+                    }
+
+                    .err-fname {
+                        display: none;
+                    }
+
+                    .form-input {
+                        width: 100%;
+                        height: 56px;
+                        border-radius: 5px;
+                        border: solid 1px $gray;
+                        padding: 15px 32px;
+
+
+                        @media screen and (max-width: 768px) {
+                            padding: 15px 19.41px;
+                        }
+
+
+                        &:focus,
+                        &:active {
+                            border: solid 1px $violet;
+                            outline: none;
+                            font-size: 14px;
+                            font-weight: $sbold;
+                            letter-spacing: 0.25px;
+                        }
+
+                        &::placeholder {
+                            font-size: 14px;
+                            font-weight: $sbold;
+                            letter-spacing: 0.25px;
+                        }
+
+                    }
+                }
+
+                .submit {
+                    display: block;
+                    width: 100%;
+                    height: 56px;
+                    font-size: 15px;
+                    font-weight: $sbold;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    background-color: $green;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.0909);
+
+                    &:hover {
+                        background-color: #77E2B3;
+                        cursor: pointer;
+                    }
+                }
+
+                p {
+                    font-size: 11px;
+                    font-weight: $medium;
+                    line-height: 26px;
+                    text-align: center;
+                    margin-top: 8px;
+                    color: #BAB7D4;
+
+                    @media screen and (max-width: 768px) {
+                        line-height: 21px;
+                    }
+
+                    span {
+                        font-weight: $bold;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}

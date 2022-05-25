@@ -29,4 +29,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 - [x] [Base Apparel Coming Soon Master](https://nezo96.github.io/base-apparel-coming-soon-master) Base Apparel Coming Soon Master - done (SASS),
  breakpoints **1200px** **900px** **768px** **375px** with **figma sketch**
 
+ - [x] [Intro Component With Signup Form Master](https://nezo96.github.io/intro-component-with-signup-form-master) Intro Component With Signup Form Master - done (SASS), breakpoints **1440px** **900px** **768px and lower**
+
 Wish me luck and a lot of ☕.
