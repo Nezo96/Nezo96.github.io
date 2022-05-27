@@ -234,6 +234,11 @@ body .header .container .header__wrapper .button__wrapper .button_download {
   }
 }
 
+body .header .container .header__wrapper .button__wrapper .button_download:hover {
+  cursor: pointer;
+  background-color: #71C0D4;
+}
+
 body .header .container .header__wrapper .button__wrapper .button_download span {
   margin-left: 4px;
   color: #8FE3F9;
@@ -255,6 +260,11 @@ body .header .container .header__wrapper .button__wrapper .button_info {
   body .header .container .header__wrapper .button__wrapper .button_info {
     margin-top: 0;
   }
+}
+
+body .header .container .header__wrapper .button__wrapper .button_info:hover {
+  cursor: pointer;
+  background-color: #B18BDD;
 }
 
 body .divider .container {
@@ -657,6 +667,11 @@ body .footer .container .info__wrap .button_download {
   body .footer .container .info__wrap .button_download {
     margin-top: 0;
   }
+}
+
+body .footer .container .info__wrap .button_download:hover {
+  cursor: pointer;
+  background-color: #B18BDD;
 }
 
 body .footer .container .info__wrap .button_download span {

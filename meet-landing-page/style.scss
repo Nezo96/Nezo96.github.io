@@ -172,6 +172,11 @@ body {
                         font-weight: $black;
                         line-height: 26px;
 
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #71C0D4;
+                        }
+
                         span {
                             margin-left: 4px;
                             color: #8FE3F9;
@@ -192,6 +197,11 @@ body {
                         font-size: 16px;
                         font-weight: $black;
                         line-height: 26px;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #B18BDD;
+                        }
                     }
                 }
             }
@@ -503,6 +513,11 @@ body {
                     font-size: 16px;
                     font-weight: $black;
                     line-height: 26px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #B18BDD;
+                    }
 
                     span {
                         margin-left: 4px;
