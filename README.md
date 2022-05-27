@@ -31,4 +31,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
  - [x] [Intro Component With Signup Form Master](https://nezo96.github.io/intro-component-with-signup-form-master) Intro Component With Signup Form Master - done (SASS), breakpoints **1440px** **900px** **768px and lower**
 
+ - [x] [Meet Landing Page](https://nezo96.github.io/meet-landing-page) Meet Landing Page - done (SASS), breakpoints **1440px** **1200px** **768px** **600px** **375px**
+
 Wish me luck and a lot of ☕.
