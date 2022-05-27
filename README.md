@@ -20,7 +20,7 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - [x] [Single Price Grid Component](https://nezo96.github.io/single-price-grid-component-master/index.html) - done (SASS) - with **figma sketch**
 
-- Huddle Landing Page - working (done 33%);
+- Huddle Landing Page - done (SASS) - with **figma sketch**
 
 - [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done (SASS) - **RESPONSIVE BELLOW 600px** - with **figma sketch** 
 
