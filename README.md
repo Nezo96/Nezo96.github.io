@@ -33,4 +33,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
  - [x] [Meet Landing Page](https://nezo96.github.io/meet-landing-page) Meet Landing Page - done (SASS), breakpoints **1440px** **1200px** **768px** **600px** **375px**
 
+ - Equalizer Landing Page - first react app, only mobile **375px**
+
 Wish me luck and a lot of ☕.

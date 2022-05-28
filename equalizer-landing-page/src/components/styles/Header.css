@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 24px 166px 24px;
+}
+
+.logo-link {
+    display: block;
+    height: 32px;
+    width: 100%
+}
+
+.logo {
+    height: 100%;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main-heading {
+    margin-top: 64px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: -0.45px;
+    text-align: left;
+    color: #191826;
+}
+
+.main-text {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #191826;
+}

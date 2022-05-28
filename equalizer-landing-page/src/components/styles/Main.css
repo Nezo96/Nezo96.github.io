@@ -1,0 +1,124 @@
+main {
+    width: 100%;
+    background-color: #191826;
+    height: 600px;
+
+}
+
+.main-container {
+    position: relative;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+}
+
+.main-background {
+    display: flex;
+    margin: 0 auto;
+}
+
+.main-image {
+    height: 430px;
+    width: auto;
+    position: absolute;
+    top: -98px;
+    left: 81px;
+}
+
+.main-card {
+    width: 100%;
+    padding: 46px 36px 48px 36px;
+    background-color: #FA7453;
+    border-radius: 12px;
+    border: none;
+    position: absolute;
+    top: 380px;
+}
+
+.sub-header {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: left;
+    color: #FCFAF9;
+}
+
+.sub-text {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #FCFAF9;
+}
+
+.card-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.price-heading {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 56px;
+    text-align: left;
+    color: #FCFAF9;
+}
+
+.price-month {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #FCFAF9;
+}
+
+.card-buttons {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-ios {
+    padding: 15px 77px 14px 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191826;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+}
+
+.button-android {
+    padding: 15px 59px 14px 59px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFAF9;
+    border-radius: 12px;
+    border: none;
+    color: #191826;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+}
+
+.mobile-logos {
+    margin-right: 8px;
+}

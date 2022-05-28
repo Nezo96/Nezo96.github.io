@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+}
+
+.footer-container {
+    padding: 390px 24px 80px 24px;
+}
+
+.footer-text-wrapper {
+    width: 100%;
+}
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+}
+
+.footer-text {
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #191826;
+}
+
+.bold {
+    display: block;
+    font-weight: bold;
+}
+
+.footer-icon-wrapper {
+    margin-top: 64px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {}
