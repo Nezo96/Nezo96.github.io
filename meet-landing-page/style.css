@@ -499,7 +499,7 @@ body .footer .container {
   padding: 92px 24px 72px 24px;
   margin-top: 176px;
   background-image: url("assets/desktop/image-footer.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
