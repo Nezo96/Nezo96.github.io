@@ -5,7 +5,7 @@ import "./styles/Header.css"
 const Header = () => {
     return (
         <header>
-            <div className='container'>
+            <div className='header-container'>
                 <a href='s' className='logo-link'>
                     <img className='logo' alt='neviem' src='equalizer.png' />
                 </a>

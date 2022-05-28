@@ -23,7 +23,8 @@ main {
     width: auto;
     position: absolute;
     top: -98px;
-    left: 81px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-card {
