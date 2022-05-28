@@ -209,13 +209,15 @@ body {
         }
     }
 
-    // DIVIDER
-    .divider {
+    // MAIN
+    .main {
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
         .container {
             padding: 64px 24px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
 
             @media screen and (min-width: 600px) {
                 padding: 80px 97px 67px 97px;
@@ -225,6 +227,7 @@ body {
                 padding: 110px 165px 64px 165px;
             }
 
+            // DIVIDER
             .divider__wrap {
                 // border: 1px solid black;
                 display: flex;
@@ -258,33 +261,14 @@ body {
                     }
                 }
             }
-        }
-    }
-
-    // MAIN
-    .main {
-        @media screen and (min-width: 1440px) {
-            max-width: 1440px;
-            margin: 0 auto;
-        }
-
-        .container {
-            padding: 0 24px;
-
-            @media screen and (min-width: 600px) {
-                padding: 0 39px;
-            }
-
-            @media screen and (min-width: 1200px) {
-                padding: 0 165px;
-            }
 
             .img__wrap {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                margin-top: 64px;
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 900px) {
                     flex-wrap: nowrap;
                 }
 
@@ -292,11 +276,14 @@ body {
                     @media screen and (min-width: 768px) {
                         min-width: 164px;
                         height: auto;
-                        margin-top: 0;
                         margin-right: 11px;
+                    }
 
-                        &:last-child {
-                            margin-right: 0;
+                    @media screen and (min-width: 900px) {
+
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            margin-top: 0;
                         }
                     }
 
