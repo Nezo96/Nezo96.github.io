@@ -447,7 +447,7 @@ body .main .container .info__wrap {
   }
 }
 
-body .main .container .info__wrap h3 {
+body .main .container .info__wrap span {
   font-size: 16px;
   font-weight: 900;
   line-height: 26px;
