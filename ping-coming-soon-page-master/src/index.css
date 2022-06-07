@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body #root {
+  height: 100vh;
+}
+
+body #root .App {
+  height: 100vh;
+}
+
+body #root .App .header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .header {
+    padding: 0 28px;
+  }
+}
+
+body #root .App .header .logo_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .header .logo_link {
+    padding-bottom: 21px;
+  }
+}
+
+body #root .App .header .logo_link .logo {
+  width: 90px;
+  height: 32px;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .header .logo_link .logo {
+    width: 56px;
+    height: 20px;
+  }
+}
+
+body #root .App .main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main {
+    padding: 0 28px;
+  }
+}
+
+body #root .App .main .main-heading {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  text-align: center;
+  color: #969696;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .main-heading {
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+}
+
+body #root .App .main .main-heading span {
+  font-weight: 700;
+  color: #15202A;
+}
+
+body #root .App .main .sec-heading {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #15202A;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .sec-heading {
+    font-size: 12px;
+  }
+}
+
+body #root .App .main .form {
+  padding-top: 40px;
+  padding-bottom: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .form {
+    padding-top: 32px;
+    padding-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+body #root .App .main .form .form-control {
+  position: relative;
+}
+
+body #root .App .main .form .form-control .email {
+  width: 421px;
+  padding: 17px 30px;
+  border-radius: 28px;
+  border: solid 1px #C2D3FF;
+  color: #C2D3FF;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .form .form-control .email {
+    width: 100%;
+  }
+}
+
+body #root .App .main .form .form-control .email::-webkit-input-placeholder {
+  color: #C2D3FF;
+}
+
+body #root .App .main .form .form-control .email:-ms-input-placeholder {
+  color: #C2D3FF;
+}
+
+body #root .App .main .form .form-control .email::-ms-input-placeholder {
+  color: #C2D3FF;
+}
+
+body #root .App .main .form .form-control .email::placeholder {
+  color: #C2D3FF;
+}
+
+body #root .App .main .form .form-control .email:focus, body #root .App .main .form .form-control .email:active {
+  outline: none;
+}
+
+body #root .App .main .form .form-control .error {
+  position: absolute;
+  bottom: -22px;
+  color: #FF5466;
+  display: block;
+  margin-left: 30px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .form .form-control .error {
+    margin-top: 2px;
+    font-size: 10px;
+  }
+}
+
+body #root .App .main .form .form-control .submit {
+  margin-left: 16px;
+  border-radius: 28px;
+  border: none;
+  padding: 18px 62px;
+  background-color: #4C7BF3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.2304);
+          box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.2304);
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .main .form .form-control .submit {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+body #root .App .main .form .form-control .submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+body #root .App .main .illustration {
+  width: 100%;
+  max-width: 640px;
+}
+
+body #root .App .footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #root .App .footer .icons {
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .footer .icons {
+    padding-bottom: 27px;
+  }
+}
+
+body #root .App .footer .icons .icon-wrapper {
+  border: 1px solid #C2D3FF;
+  border-radius: 100%;
+  max-width: 32px;
+  max-height: 32px;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #root .App .footer .icons .icon-wrapper:not(:last-child) {
+  margin-right: 12px;
+}
+
+body #root .App .footer .icons .icon-wrapper:hover {
+  cursor: pointer;
+  background-color: #4C7BF3;
+  color: #fff;
+}
+
+body #root .App .footer .icons .icon-wrapper .icon {
+  color: #4C7BF3;
+}
+
+body #root .App .footer .icons .icon-wrapper .icon:hover {
+  color: #fff;
+}
+
+body #root .App .footer .copy {
+  font-size: 12px;
+  font-weight: 300;
+  color: #969696;
+}
+
+@media screen and (max-width: 700px) {
+  body #root .App .footer .copy {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
