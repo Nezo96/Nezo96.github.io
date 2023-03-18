@@ -33,7 +33,7 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
  - [x] [Meet Landing Page](https://nezo96.github.io/meet-landing-page) Meet Landing Page - done (SASS), breakpoints **1440px** **1200px** **768px** **600px** **375px**
  
- -[x] [Results Summary Component Main](https://nezo96.github.io/results-summary-component-main/) Results Summary Component Main - done (css), responsive
+ - [x] [Results Summary Component Main](https://nezo96.github.io/results-summary-component-main/) Results Summary Component Main - done (css), **responsive**
 
  - Equalizer Landing Page - first react app, only mobile **375px**
 
