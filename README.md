@@ -37,6 +37,6 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Equalizer Landing Page - first react app, only mobile **375px**
 
-- [x] [QR Code Component](https://nezo96.github.io/livestream/index.html)
+- [x] [Livestream](https://nezo96.github.io/livestream/index.html)
 
 Wish me luck and a lot of ☕.
