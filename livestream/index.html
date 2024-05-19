@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Centered Navigation Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Video-JS-cdn-->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+    <style>
+      .iframe-section {
+        display: none;
+      }
+      #iframe1 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navigačné menu -->
+    <nav class="bg-gray-800 p-4 w-full">
+      <div class="container mx-auto flex justify-center">
+        <div class="flex space-x-4 items-center">
+          <a href="#" class="text-gray-300 hover:text-white">Home</a>
+          <div class="text-white text-lg font-bold">My Site</div>
+          <a href="#" class="text-gray-300 hover:text-white">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sekcia s headingom a veľkým textom -->
+    <section class="flex-grow flex items-center justify-center h-96">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to My Site</h1>
+        <p class="text-xl text-gray-600">
+          This is a simple centered text section.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sekcia s linkami vedľa seba -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto flex justify-center space-x-4">
+        <a
+          href="#"
+          id="link1"
+          class="text-blue-500 hover:text-blue-700 font-bold"
+          onclick="showIframe('iframe1', 'link1')"
+          >JOJ</a
+        >
+        <a
+          href="#"
+          id="link2"
+          class="text-blue-500 hover:text-blue-700"
+          onclick="showIframe('iframe2', 'link2')"
+          >JOJ Šport</a
+        >
+        <a
+          href="#"
+          id="link3"
+          class="text-blue-500 hover:text-blue-700"
+          onclick="showIframe('iframe3', 'link3')"
+          >JOJ Plus</a
+        >
+        <a
+          href="#"
+          id="link4"
+          class="text-blue-500 hover:text-blue-700"
+          onclick="showIframe('iframe4', 'link4')"
+          >JOJ 24</a
+        >
+      </div>
+    </section>
+
+    <!-- Sekcie s iframe -->
+    <section id="iframe1" class="iframe-section bg-gray-200 py-8">
+      <div class="container mx-auto flex justify-center">
+        <div>
+          <h1 class="text-center font-bold text-4xl mb-4">JOJ</h1>
+          <iframe
+            src="https://media.joj.sk/embed/EMkFULcpYQH"
+            width="560"
+            height="315"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="iframe2" class="iframe-section bg-gray-200 py-8">
+      <div class="container mx-auto flex justify-center">
+        <div>
+          <h1 class="text-center font-bold text-4xl mb-4">JOJ Šport</h1>
+          <video
+            id="vid1"
+            width="560"
+            height="315"
+            class="video-js"
+            controls
+            preload="auto"
+            data-setup="{}"
+          >
+            <source
+              src="https://live.cdn.joj.sk/live/andromeda/joj_sport-720.m3u8"
+              type="application/x-mpegURL"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="iframe3" class="iframe-section bg-gray-200 py-8">
+      <div class="container mx-auto flex justify-center">
+        <div>
+          <h1 class="text-center font-bold text-4xl mb-4">JOJ Plus</h1>
+          <video
+            id="vid2"
+            width="560"
+            height="315"
+            class="video-js"
+            controls
+            preload="auto"
+            data-setup="{}"
+          >
+            <source
+              src="https://live.cdn.joj.sk/live/andromeda/plus-720.m3u8"
+              type="application/x-mpegURL"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="iframe4" class="iframe-section bg-gray-200 py-8">
+      <div class="container mx-auto flex justify-center">
+        <div>
+          <h1 class="text-center font-bold text-4xl mb-4">JOJ 24</h1>
+          <video
+            id="vid3"
+            width="560"
+            height="315"
+            class="video-js"
+            controls
+            preload="auto"
+            data-setup="{}"
+          >
+            <source
+              src="https://live.cdn.joj.sk/live/andromeda/joj_news-720.m3u8"
+              type="application/x-mpegURL"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 My Site. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function showIframe(id, linkId) {
+        let iframes = document.querySelectorAll(".iframe-section");
+        let videos = document.querySelectorAll("video");
+        let links = document.querySelectorAll(".bg-white a");
+        // Zastavenie videa a zresetovanie zdroja
+        videos.forEach(function (video) {
+          video.pause();
+        });
+
+        // Skryť iframe
+        iframes.forEach(function (iframe) {
+          iframe.style.display = "none";
+        });
+
+        // Odstránienie aktívnej triedy z odkazov
+        links.forEach(function (link) {
+          link.classList.remove("text-blue-700", "font-bold");
+        });
+
+        // Zobraz daný iframe a nastav aktívny odkaz
+        document.getElementById(id).style.display = "block";
+        document
+          .getElementById(linkId)
+          .classList.add("text-blue-700", "font-bold");
+      }
+    </script>
+  </body>
+</html>

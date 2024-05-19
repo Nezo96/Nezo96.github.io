@@ -22,19 +22,21 @@ This code is not 1:1 ratio because i do not have **pro** so i only have images h
 
 - Huddle Landing Page - done (SASS) - with **figma sketch**
 
-- [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done (SASS) - **RESPONSIVE BELLOW 600px** - with **figma sketch** 
+- [x] [Four Card Feature Section](https://nezo96.github.io/four-card-feature-section/index.html) - done (SASS) - **RESPONSIVE BELLOW 600px** - with **figma sketch**
 
 - Pod Request Access Landing Page - working (done 75%);
 
 - [x] [Base Apparel Coming Soon Master](https://nezo96.github.io/base-apparel-coming-soon-master) Base Apparel Coming Soon Master - done (SASS),
- breakpoints **1200px** **900px** **768px** **375px** with **figma sketch**
+      breakpoints **1200px** **900px** **768px** **375px** with **figma sketch**
 
- - [x] [Intro Component With Signup Form Master](https://nezo96.github.io/intro-component-with-signup-form-master) Intro Component With Signup Form Master - done (SASS), breakpoints **1440px** **900px** **768px and lower**
+- [x] [Intro Component With Signup Form Master](https://nezo96.github.io/intro-component-with-signup-form-master) Intro Component With Signup Form Master - done (SASS), breakpoints **1440px** **900px** **768px and lower**
 
- - [x] [Meet Landing Page](https://nezo96.github.io/meet-landing-page) Meet Landing Page - done (SASS), breakpoints **1440px** **1200px** **768px** **600px** **375px**
- 
- - [x] [Results Summary Component Main](https://nezo96.github.io/results-summary-component-main/) Results Summary Component Main - done (css), **responsive**
+- [x] [Meet Landing Page](https://nezo96.github.io/meet-landing-page) Meet Landing Page - done (SASS), breakpoints **1440px** **1200px** **768px** **600px** **375px**
 
- - Equalizer Landing Page - first react app, only mobile **375px**
+- [x] [Results Summary Component Main](https://nezo96.github.io/results-summary-component-main/) Results Summary Component Main - done (css), **responsive**
+
+- Equalizer Landing Page - first react app, only mobile **375px**
+
+- [x] [QR Code Component](https://nezo96.github.io/livestream/index.html)
 
 Wish me luck and a lot of ☕.
