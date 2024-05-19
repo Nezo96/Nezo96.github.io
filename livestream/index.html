@@ -193,40 +193,6 @@
           .getElementById(linkId)
           .classList.add("text-blue-700", "font-bold");
       }
-
-      async function fetchSchedule() {
-        try {
-          const response = await fetch(
-            "https://www.iihf.com/en/events/2024/wm/schedule"
-          );
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          const text = await response.text();
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, "text/html");
-
-          // Extrahovanie údajov zo stránky, napríklad zoznam zápasov
-          const scheduleItems = doc.querySelectorAll(".game-centre"); // Adjust the selector based on the actual HTML structure
-          const schedule = [];
-
-          scheduleItems.forEach((item) => {
-            const match = {
-              date: item.querySelector(".game-date").textContent.trim(),
-              teams: item.querySelector(".teams").textContent.trim(),
-              time: item.querySelector(".game-time").textContent.trim(),
-              location: item.querySelector(".game-location").textContent.trim(),
-            };
-            schedule.push(match);
-          });
-
-          console.log(schedule);
-        } catch (error) {
-          console.error("Error fetching schedule:", error);
-        }
-      }
-
-      fetchSchedule();
     </script>
   </body>
 </html>
